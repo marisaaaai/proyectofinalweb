@@ -115,7 +115,20 @@ class Navbar extends React.Component {
                 },
                 "Proyectos"
               )
-            )
+            ),
+            React.createElement(
+              "li",
+              { className: "nav-item" },
+              React.createElement(
+                "a",
+                {
+                  className: "nav-link js-scroll",
+                  href: "#footer",
+                  onClick: (event) => this.scrollToSection(event, "footer"),
+                },
+                "Socials"
+              )
+            ),
           )
         )
       )

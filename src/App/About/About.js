@@ -32,22 +32,24 @@ class About extends React.Component {
           porcentage: "85%",
           value: "85",
         },
+        {
+          id: "Ingles",
+          content: "Ingles",
+          porcentage: "90%",
+          value: "90",
+        },
+        {
+          id: "español",
+          content: "Español",
+          porcentage: "90%",
+          value: "90",
+        },
       ],
       about_me: [
         {
           id: "first-p-about",
           content:
-            "Hola! Soy María Isabel Montoya Valladares. Soy estudiante de quinto año de la carrera en Ingeniería en bioinformática. Tengo 22 años y soy una chica muy entusiasta, trabajadora y dedicada. En el lado personal me gusta mucho escuchar música, bailar, pintar, moverme y tener más cosas que hacer que solo quedarme quieta",
-        },
-        {
-          id: "second-p-about",
-          content:
-            "L non id tempor. Amet adipisicing occaecat tempor culpa quis est duis.",
-        },
-        {
-          id: "third-p-about",
-          content:
-            "L non id tempor. Amet adipisicing occaecat tempor culpa quis est duis.",
+            "Hola! Soy María Isabel Montoya Valladares. Soy estudiante de quinto año de la carrera en Ingeniería en bioinformática. Tengo 22 años y soy una chica muy entusiasta, trabajadora y dedicada. En el lado personal me gusta mucho escuchar música, bailar, pintar, moverme y tener más cosas que hacer para no tener una vida sedentaria.",
         },
       ],
     };
@@ -56,7 +58,8 @@ class About extends React.Component {
   render() {
     return React.createElement(
       "section",
-      { id: "about", className: "about-mf sect-pt4 route" },
+      { id: "about", className: "about-mf sect-pt4 route",
+      } ,
       React.createElement(
         "div",
         { className: "container" },
@@ -122,9 +125,22 @@ class About extends React.Component {
                             "aria-valuemin": "0",
                             "aria-valuemax": "100",
                           })
-                        )
+                        ),
+                        
                       );
-                    })
+
+                    }),
+                    <p className="lead">
+                          <b>
+                            Cursos Extra
+                          </b>
+                          <ul>
+                            <li>TOEFL Preparation <br/> Academia Europea <br/> 2018 - 2018</li>
+                            <li> Learning How to Learn: Powerful Mental tools to help you master through subjects <br/> UC San Diego <br/> 2020 </li>
+                            <li> Biology Meets Programming: Bioinformatics for Beginners <br/> UC San Diego <br/> 2020</li>
+
+                          </ul>
+                    </p>
                   )
                 ),
                 <div className="col-md-6">
@@ -140,6 +156,25 @@ class About extends React.Component {
                       content.content
                     );
                   })}
+                  <p className="lead">
+                    <b>
+                      Educación
+                    </b><br/>
+                    <ul>
+                      <li> Universidad del Valle de Guatemala <br/> Ingenieria en bioinformática <br/> 2019-2023</li>
+                      <li> Colegio Suizo Americano <br/> Bachillerato <br/> 2017-2018</li>
+                      <li> Colegio Bilingue Campo Real <br/> Educación basica <br/> 2004 - 2016 </li>
+                    </ul>
+                  </p>
+                  <p className="lead">
+                    <b>
+                      Contacto
+                    </b>
+                    <br />
+                    <i> Correo: </i> mon19169@yvg.edu.gt
+                    <br />
+                    <i> Telefono: </i> (502) 1234-5678
+                  </p>
                 </div>
               )
             )
